@@ -1,9 +1,13 @@
 # preact-scroll-events
 
-<a href="https://npmjs.com/package/preact-scroll-events" alt="npm link"><img src="https://img.shields.io/npm/v/preact-slide.svg?style=flat-square" /></a>
+<a href="https://npmjs.com/package/preact-scroll-events" alt="npm link"><img src="https://img.shields.io/npm/v/preact-scroll-events.svg?style=flat-square" /></a>
 
 
 ## MinMaxEvent
+
+`{MinMaxEvent} = require('preact-scroll-events')`
+
+`import {MinMaxEvent} from preact-scroll-events`
 
 **`offsetMaxBeta`**  *`100`* when scroll reaches % of scrollable element from end [---->|..(100)%..] this event will fired once, until the scroll is less than the max, then it will be able to fire again. 
 
@@ -32,6 +36,8 @@ render: ->
 
 ### coffeescript
 ```coffeescript
+{MinMaxEvent} = require('preact-scroll-events')
+
 render: ->
 	h MinMaxEvent,
 		vert: true

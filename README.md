@@ -6,13 +6,13 @@
 
 
 ## MinMaxEvent
-**`offsetMaxBeta`**  *`100`* when scroll reaches % of scrollable element from end [---->|..(100)%..] this event will fired once, until the scroll is less than the max, then it will be able to fire again. 
+**`offsetMaxBeta`**  *`default: 100`* when scroll reaches % of scrollable element from end [---->|..(100)%..] this event will be fired once. When the scroll is less than the max, then it will be able to fire again. 
 
 **`offsetMinBeta`**  *`100`* when scroll reaches % of scrollable element from start [..(100)%..|<----]
 
-**`offsetMin`**  *`100`* when scroll reaches px of scrollable element from end [..(X)px..|<----]
+**`offsetMin`**  *`0`* when scroll reaches distance in pixels from end [..(X)px..|<----]
 
-**`offsetMax`**  *`100`* when scroll reaches px of scrollable element from start [---->|..(X)px..]
+**`offsetMax`**  *`0`* when scroll reaches distance in pixels start [---->|..(X)px..]
 
 **`vert`**  *`true`* vertical of horizontal scroll?
 

@@ -4,10 +4,7 @@
 
 
 ## MinMaxEvent
-
-`{MinMaxEvent} = require('preact-scroll-events')`
-
-`import {MinMaxEvent} from preact-scroll-events`
+Adds onMaxReached and onMinReached events with a few extra variables to the nested component.
 
 **`offsetMaxBeta`**  *`100`* when scroll reaches % of scrollable element from end [---->|..(100)%..] this event will fired once, until the scroll is less than the max, then it will be able to fire again. 
 
@@ -27,16 +24,23 @@
 
 ### jsx
 ```jsx
-render: ->
+import {MinMaxEvent} from preact-scroll-events
+
+//......
+
+render: function(){
 	<MinMaxEvent vert=true offsetMinBeta=0 offsetMaxBeta=100 onMaxReached=this.onMaxReachedCallback onMinReached=this.onMinReachedCallback>
 		<div style={overflowY:"scroll"}>Im scrollable, when my scroll reaches 100% of my height from bottom, one onMaxReached event will be fired</div>
 	</MinMaxEvent>
+}
 ```
 
 
 ### coffeescript
 ```coffeescript
 {MinMaxEvent} = require('preact-scroll-events')
+
+#.......
 
 render: ->
 	h MinMaxEvent,

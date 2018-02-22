@@ -1,0 +1,29 @@
+{
+  "name": "preact-scroll-events",
+  "version": "1.0.0",
+  "description": "wrapper to add scroll events to underlying scrollable component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "coffee -c -o MinMaxScrollEvent.js source/MinMaxScrollEvent.coffee ",
+    "republishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arxii/preact-scroll-events.git"
+  },
+  "keywords": [
+    "preact",
+    "scroll",
+    "events"
+  ],
+  "author": "arxii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arxii/preact-scroll-events/issues"
+  },
+  "homepage": "https://github.com/arxii/preact-scroll-events#readme",
+  "peerDependencies": {
+    "preact": "8.x"
+  }
+}

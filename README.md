@@ -1,6 +1,7 @@
 # preact-scroll-events
 
 <a href="https://npmjs.com/package/preact-scroll-events" alt="npm link"><img src="https://img.shields.io/npm/v/preact-scroll-events.svg?style=flat-square" /></a>
+
 **MinMaxEvent** : Adds onMaxReached and onMinReached events with a few extra variables to the nested component.
 
 
